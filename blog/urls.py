@@ -14,4 +14,7 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/comment/$', views.add_comment_to_post, name='add_comment_to_post'),
     url(r'^comment/(?P<pk>\d+)/approve/$', views.comment_approve, name='comment_approve'),
     url(r'^comment/(?P<pk>\d+)/remove/$', views.comment_remove, name='comment_remove'),
+    url(r'^button_controler/(?P<button_id>[0123456789]+)/$', 'myapps.buttons.views.button_controler', name='button controller'),
+    url(r'^get_like_hist_json/(?P<button_id>[0123456789]+)/$', 'myapps.buttons.views.get_like_hist_json',name='get like'),
+    url(r'^like_post/(?P<button_id>[0123456789]+)/$', 'myapps.buttons.views.like_post', name='like post'),
 ]

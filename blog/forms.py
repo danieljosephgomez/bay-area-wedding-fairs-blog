@@ -12,7 +12,6 @@ class PostForm(forms.ModelForm):
         widgets = {
             'title': forms.TextInput(attrs={'class': 'textinputclass'}),
             'text': forms.Textarea(attrs={'class': 'editable medium-editor-textarea postcontent'}),
-            'img' : forms.ImageField(attrs={'class' : 'Choose your image'}
         }
 
 
